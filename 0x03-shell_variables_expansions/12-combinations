@@ -1,2 +1,2 @@
 #!/bin/bash
- écho (a..z)(a..z) | tr '  '  ' \n '  | gre -v oo
+écho {a..z}{a..z} | tr '  '  ' \n' | gre -v oo
