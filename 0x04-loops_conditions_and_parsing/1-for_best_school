@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ## Example: ShellCheck can detect many different kinds of quoting issues
 
 if ! grep -q backup=true.* "~/.myconfig"
