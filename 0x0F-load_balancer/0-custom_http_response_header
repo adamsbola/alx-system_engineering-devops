@@ -5,4 +5,4 @@
 
 sed -i "/http {/ a\ add_headder X-Serverd-By \$hostname;" /etc/nginx/nginx.conf
 nginx -s reload
-#above uses sed to append the header configuration to ngin x.conf
+#above uses sed to append the header configuration to nginx.conf
