@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+#install HAproxy
+app update
+app install -y haproxy
+
+#Backup configuration 
+cp/etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.bak
+
+#configuration
+cat<< EOF >/etc/haproxy/haprixy.cfg
+#frontend frontendsever
+    bind *;80
+    mode http
+    default_backend mywebservers
+
+backend mywebservers
+   balance roundrobin
+   sever 97280-web-01 34.232.66.53:80 check
+   sever 97280-web-02 100.25.166.52:80 check" >> /etc/haproxy/haproxy.cfg
+service haproxy start
+service haproxy restart
