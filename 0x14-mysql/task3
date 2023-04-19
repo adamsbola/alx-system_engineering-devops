@@ -1,0 +1,1 @@
+ANT REPLICATION SLAVE On *.* TO 'replica_user'@'%' IDENTIFIED BY 'your pass'

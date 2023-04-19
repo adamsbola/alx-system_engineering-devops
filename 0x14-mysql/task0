@@ -1,0 +1,1 @@
+REATE USER 'username'@'localhost' IDENTIFIED BY 'password'

@@ -1,0 +1,1 @@
+ANT REPLICATION CLIENT ON *.* TO 'username'@'host_or_wildcard' IDENTIFIED BY 'password';
