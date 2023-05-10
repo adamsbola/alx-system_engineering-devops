@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Queries Reddit API to determine subreddit sub count
 """
 
